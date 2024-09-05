@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Enlace al hacer clic en el logotipo -->
+        <a href="{% url 'intro_interface' %}">
+            <img src="{% static 'assets/logo_imss.png' %}" alt="Logo IMSS">
+        </a>
+    </div>
+    <div class="slogan">PROYECTO INTEGRAL DE SALUD</div>
+    <div class="subtitle">Un paciente, un Expediente electrónico</div>
+    
+    <!-- Botón para cerrar la ventana -->
+    <button class="close-button" onclick="cerrarVentana()">Cerrar</button>
+
+    <script>
+        function cerrarVentana() {
+            window.close(); // Intenta cerrar la ventana actual
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
